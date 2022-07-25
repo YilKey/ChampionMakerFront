@@ -27,8 +27,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "test": "cypress open",
-    "eject": "react-app-rewired eject",
-    "web": "node src/index.js"
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": [
