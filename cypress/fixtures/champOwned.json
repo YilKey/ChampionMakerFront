@@ -1,0 +1,15 @@
+{
+    "championID": 428,
+    "championName": "Test",
+    "championDiscription": "This is a test champion",
+    "championRating": 10,
+    "type": {
+        "typeID": 328,
+        "typeName": "Healer",
+        "typeDiscription": "A healer is a character whose primary purpose or class role is to heal and protect their allies"
+    },
+    "user": {
+        "userID": 186,
+        "userName": "Aba"
+    }
+}

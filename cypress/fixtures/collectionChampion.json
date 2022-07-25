@@ -1,0 +1,10 @@
+[
+    {
+        "championID": 451,
+        "championName": "Test",
+        "championDiscription": "This is a test champion",
+        "championRating": 10,
+        "championType": "Healer",
+        "fromUser": "Aba"
+    }
+]
