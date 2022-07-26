@@ -22,6 +22,7 @@ const ChampionsPage = () => {
       ) {
         return champion;
       }
+      return champion;
     });
   } else {
     list = [];

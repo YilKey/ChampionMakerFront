@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { Link } from "react-router-dom";
 import { useSession } from "../authContext/AuthProvider";
 import ChampionIcon from "../helper/ChampionIcon";
@@ -18,7 +17,7 @@ const ChampionCard = ({ champion }) => {
     championUser = champion.fromUser;
   }
   if (isAuthed) {
-    owner = championUser == user.userName;
+    owner = championUser === user.userName;
   }
 
   return (

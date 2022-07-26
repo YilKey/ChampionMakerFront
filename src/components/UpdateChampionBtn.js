@@ -5,7 +5,6 @@ import LabelInputAdd from "./LabelInputAdd";
 import { useCallback, useState } from "react";
 import { updateChampion } from "../api/useChampions";
 import { useSession } from "../authContext/AuthProvider";
-import { useNavigate } from "react-router-dom";
 import { useQueryClient } from "react-query";
 
 const validationRules = {
@@ -18,7 +17,6 @@ const validationRules = {
 };
 
 const UpdateChampionBtn = ({ champion }) => {
-  const navigate = useNavigate();
   const methods = useForm();
   const { user } = useSession();
   const { handleSubmit } = methods;
@@ -32,14 +30,14 @@ const UpdateChampionBtn = ({ champion }) => {
         type,
       });
 
-      if (success.rows == 1) {
+      if (success.rows === 1) {
         setError("Champion edited succesfully");
         queryClient.invalidateQueries("champion");
       } else {
         setError(success.error);
       }
     },
-    [navigate]
+    [champion, queryClient, user.userName]
   );
   return (
     <Popup trigger={<button className="updateBtn">EDIT CHAMPION</button>}>

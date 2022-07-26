@@ -1,4 +1,3 @@
-import { ReactQueryDevtools } from "react-query/devtools";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import HomePage from "./pages/HomePage";
@@ -50,7 +49,6 @@ const App = () => {
                 }
               />
             </Routes>
-            <ReactQueryDevtools />
           </QueryClientProvider>
         </div>
       </Router>

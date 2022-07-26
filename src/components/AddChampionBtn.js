@@ -2,10 +2,9 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { FormProvider, useForm } from "react-hook-form";
 import LabelInputAdd from "../components/LabelInputAdd";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { addChampion } from "../api/useChampions";
 import { useSession } from "../authContext/AuthProvider";
-import { useNavigate } from "react-router-dom";
 import { useQueryClient } from "react-query";
 
 const validationRules = {
@@ -21,7 +20,6 @@ const validationRules = {
 };
 
 const AddChampionBtn = () => {
-  const navigate = useNavigate();
   const methods = useForm();
   const { ready, user } = useSession();
   const { handleSubmit } = methods;
@@ -38,7 +36,7 @@ const AddChampionBtn = () => {
             type,
           });
 
-          if (success.status == "201") {
+          if (success.status === "201") {
             setError("Champion is made succesfully");
             queryClient.invalidateQueries("userChampions");
           } else {
@@ -49,7 +47,7 @@ const AddChampionBtn = () => {
         console.log("create fucked up");
       }
     },
-    [navigate]
+    [queryClient, ready, user.userName]
   );
   return (
     <Popup

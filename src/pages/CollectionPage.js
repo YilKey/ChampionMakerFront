@@ -22,7 +22,7 @@ const CollectionPage = () => {
     };
     fetch();
     refetch();
-  }, [username]);
+  }, [username, refetch]);
 
   useEffect(() => {
     if (status === "success") {
