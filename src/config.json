@@ -1,5 +1,0 @@
-{
-  "base_url": "https://kerem-championmaker.herokuapp.com/api/",
-  "token_key": "auth_token",
-  "url": "http://localhost:3000"
-}

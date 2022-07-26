@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ChampionMakerFront/static/css/main.1fed216a.css",
+    "main.js": "/ChampionMakerFront/static/js/main.7f1619bb.js",
+    "static/js/787.8dd28441.chunk.js": "/ChampionMakerFront/static/js/787.8dd28441.chunk.js",
+    "static/media/loginBGI.png": "/ChampionMakerFront/static/media/loginBGI.e10871530cfe0384fd20.png",
+    "static/media/BGI.png": "/ChampionMakerFront/static/media/BGI.96f535193d62573dd7be.png",
+    "static/media/404_champMaker.png": "/ChampionMakerFront/static/media/404_champMaker.a293f11130a8a3d3e26d.png",
+    "index.html": "/ChampionMakerFront/index.html",
+    "main.1fed216a.css.map": "/ChampionMakerFront/static/css/main.1fed216a.css.map",
+    "main.7f1619bb.js.map": "/ChampionMakerFront/static/js/main.7f1619bb.js.map",
+    "787.8dd28441.chunk.js.map": "/ChampionMakerFront/static/js/787.8dd28441.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fed216a.css",
+    "static/js/main.7f1619bb.js"
+  ]
+}
